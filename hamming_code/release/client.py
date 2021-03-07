@@ -81,8 +81,8 @@ def main():
 
     #Делаем connect
     sock = socket.socket()
-    path_to_file = r'E:\glob_net\hamming_code\release\test.txt' # input("Input full path to file with text.Important! Text should be in cp1251 or : ")  #r'E:\glob_net\hamming_code\release\test.txt' 
-    flag = 0#int(input("Input flag of erros. 0 - no errors, 1 - only one error, 2 - only two error, 3 - mix both of them: "))
+    path_to_file = input("Input full path to file with text.Important! Text should be in cp1251 or : ")  #r'E:\glob_net\hamming_code\release\test.txt' 
+    flag = int(input("Input flag of erros. 0 - no errors, 1 - only one error, 2 - only two error, 3 - mix both of them: "))
     #flag=0 без ошибок flag=1 только с одиночными ошибками flag=2 только со множественными flag=3 в разброс
     with open(path_to_file, 'r') as read_file:
         str = read_file.read()
