@@ -1,4 +1,5 @@
 import random
+# import codecs
 
 #кодируем по буквам
 def encode_str_to_bin_seq(data):
@@ -110,7 +111,7 @@ def create_words_hamming(bins_seq,flag=0): #flag=0 без ошибок flag=1 т
     return hamming_words_error, stat_err
 
 def create_code_hamming(word):
-    print(word)
+    #print(word)
     code_hamming = '0'
     left = 0
     #нам необходимо добавить 6 вспомогательных битов.
@@ -168,9 +169,10 @@ def decode_code_hamming(code_hamming):
     #Высчитываем вспомогательный 7ой бит
     for bit in code_hamming:
         P = P ^ int(bit)
-    print(P)
+    #print(P)
     if C == 0 and P == 0:
-        print('Is ok')
+        #print('Is ok')
+        temp = '0'
         #No error и все хорошо
     if C != 0 and P == 1:
         #Single error
@@ -179,14 +181,14 @@ def decode_code_hamming(code_hamming):
         correct = 1 if int(code_hamming[pos_error]) == 0 else 0
         code_hamming = code_hamming[:pos_error] + f'{correct}' + code_hamming[pos_error+1:] 
         oneError = pos_error
-        print('Single error')
+        #print('Single error')
     if C != 0 and P == 0:
         #Double error и все очень плохо. Потеряли 6 символов
         isDoubleError = True
 
-        print('Double error')
+        #print('Double error')
     if C == 0 and P == 1:
-        print('Is ok. Error at 51 bit')
+        #print('Is ok. Error at 51 bit')
         pos_error = 51 - 1
         oneError = pos_error
         #Error в 51ом саппортном бите
@@ -220,14 +222,14 @@ def getSeqOfBitsAndDecode(words, statistic):
         #Последнее слово нужно обработать особым образом, так как возможны 000000000
         if idx == len(words) - 1:
             if len(result) > 0:
-                print("TODO")
+                #print("TODO")
                 if (idx % 2) == 0: # возможно только 1 2 3 4 и 5 символов. Половинки быть не может!
                     #ищем когда у нас подряд 8 нулей
                     for i in range(5):
                         symbol = result[i*8:i*8+8]
                         if int(symbol) == 0:
                             #значит у нас i символов есть
-                            print(i)
+                            #print(i)
                             last_letters = result[:i*8]
                             result_str = result_str + decode_bin_seq_to_str(last_letters)
                             break
@@ -247,7 +249,7 @@ def getSeqOfBitsAndDecode(words, statistic):
                         symbol = result[i*8+4:i*8+8+4]
                         if int(symbol) == 0:
                             #значит у нас i символов есть
-                            print(i)
+                            #print(i)
                             last_letters = result[4:(i)*8+4]
                             result_str = result_str + decode_bin_seq_to_str(last_letters)
                             break
@@ -296,6 +298,8 @@ def decode_bin_seq_to_str(bins_seq):
     for bin_letter in list_of_bins:
         letter_code = int(bin_letter, 2)    #переводим в int
         hex_code = hex(letter_code)[2:] #переводим в hex
+        if letter_code <= 15:
+            hex_code =  '0' + hex_code #особенности перевода
         hex_str += bytes.fromhex(hex_code) #добавляем букву
     str = hex_str.decode('cp1251', 'replace')
     return str
@@ -304,9 +308,9 @@ def process(str):
     #1) Получаем последовательность битов
     bins = encode_str_to_bin_seq(str)
     #2) Кодируем ее в слова hamming'a
-    words = create_words_hamming(bins)
+    words, err = create_words_hamming(bins)
     #3*)Условано передаем их. Если нужно то просто склеиваем их в последовательность битов
-    print(words[0])
+    #print(words[0])
     #4*)Приняли и снова разбиваем на длину слова 51
     #5) Декодируем и собираем статистику по ошибкам
     stat_err = []
@@ -320,24 +324,33 @@ def process(str):
     for idx, err in enumerate(stat_err):
         if err >= 0:
             oneError +=1
-            print(f'There is a single mistake in word number {idx} at position {err}')
+            #print(f'There is a single mistake in word number {idx} at position {err}')
         elif err == -1:
             noError +=1
-            print(f'There is no mistake in word number {idx}')
+            #print(f'There is no mistake in word number {idx}')
         elif err == -2:
             twoError +=1
-            print(f'There is a double mistake in word number {idx} ')
+            #print(f'There is a double mistake in word number {idx} ')
     #6) Выводим общий результат
     total_word = oneError+noError+twoError
-    print(f'Common statistic: \nTotal word count : {total_word} \nWithout errors: {noError}/{total_word} \nOne error: {oneError}/{total_word} \nTwo erros: {twoError}/{total_word}')
+    #print(f'Common statistic: \nTotal word count : {total_word} \nWithout errors: {noError}/{total_word} \nOne error: {oneError}/{total_word} \nTwo erros: {twoError}/{total_word}')
     
     print(str_res)
     print(f'Cтроки полностью совпали : {str == str_res}')
     #)7* отправляем пакет данных с ошибками в виде  bit(42;-1;-2;1;0;1;HaMmInGCooL) где HaMmInGCooL - кодовое слово
 
 def main():
-    str = 'Думаю, что теперь будет легче. Да и само клиентское приложение проще — нам нужно создать сокет, подключиться к серверу послать ему данные, принять данные и закрыть соединение. Все это делается так:#!/usr/bin/env python # -*- coding: utf-8 -*-ЮАФЫ2??13ads5%^@' 
-    process(str)
+    
+    # path_to_file = r'E:\glob_net\hamming_code\release\test.txt' 
+    # # fileObj = codecs.open( path_to_file, "r", "cp1251" )
+    # # text = fileObj.read() # или читайте по строке
+    # # fileObj.close()
+    # # str = text
+    # with open(path_to_file, 'r') as read_file:
+    #     str = read_file.read()
+
+    # #str = 'Думаю, что теперь будет легче. Да и само клиентское приложение проще — нам нужно создать сокет, подключиться к серверу послать ему данные, принять данные и закрыть соединение. Все это делается так:#!/usr/bin/env python # -*- coding: utf-8 -*-ЮАФЫ2??13ads5%^@' 
+    # process(str)
     return 0
 
 if __name__ == "__main__":

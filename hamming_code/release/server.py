@@ -11,17 +11,18 @@ def printStat(stat_err):
     for idx, err in enumerate(stat_err):
         if err >= 0:
             oneError +=1
-            print(f'There is a single mistake in word number {idx} at position {err}')
+            #print(f'There is a single mistake in word number {idx} at position {err}')
         elif err == -1:
             noError +=1
-            print(f'There is no mistake in word number {idx}')
+            #print(f'There is no mistake in word number {idx}')
         elif err == -2:
             twoError +=1
-            print(f'There is a double mistake in word number {idx} ')
+            #print(f'There is a double mistake in word number {idx} ')
     #6) Выводим общий результат
     total_word = oneError+noError+twoError
-    print(f'Common statistic: \nTotal word count : {total_word} \nWithout errors: {noError}/{total_word} \nOne error: {oneError}/{total_word} \nTwo erros: {twoError}/{total_word}')
-
+    print(f'Common statistic: \nTotal hamming words count : {total_word} \nWithout errors: {noError}/{total_word} \nOne error: {oneError}/{total_word} \nTwo erros: {twoError}/{total_word}')
+    with open('./server_result.txt', 'w') as wf:
+        wf.write(f'Common statistic: \nTotal word count : {total_word} \nWithout errors: {noError}/{total_word} \nOne error: {oneError}/{total_word} \nTwo erros: {twoError}/{total_word}')
 
 #Тут будем декодировать коды и возвращать будем последовательность бит со статистикой. Будем считать, что сервер знает длину слова 51
 def process(response):
@@ -31,8 +32,11 @@ def process(response):
     stat_err = []
     str_res, stat_err = HC.getSeqOfBitsAndDecode(words, stat_err)
     printStat(stat_err)
-    #Кодируем статистику в код Хемминга
+    with open('./server_result.txt', 'a') as wf:
+        wf.write('\nRESULT TEXT:\n')
+        wf.write(str_res)
     print(str_res)
+    #Кодируем статистику в код Хемминга
     #Делаем последовательность из чисел со статистикой
     statistic_str = ''
     sep = ';'

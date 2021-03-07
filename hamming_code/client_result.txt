@@ -1,0 +1,13 @@
+
+stat_from_server
+Common statistic: 
+Total word count : 2279 
+Without errors: 2279/2279 
+One error: 0/2279 
+Two erros: 0/2279
+true_stat
+Common statistic: 
+Total word count : 2279 
+Without errors: 2279/2279 
+One error: 0/2279 
+Two erros: 0/2279

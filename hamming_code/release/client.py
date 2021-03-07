@@ -1,6 +1,8 @@
 import socket
 import hamming_code as HC
 
+import codecs
+
 #Клиент отправляет сообщение
 
 def printStat(stat_err):
@@ -19,7 +21,9 @@ def printStat(stat_err):
             #print(f'There is a double mistake in word number {idx} ')
     #6) Выводим общий результат
     total_word = oneError+noError+twoError
-    print(f'Common statistic: \nTotal word count : {total_word} \nWithout errors: {noError}/{total_word} \nOne error: {oneError}/{total_word} \nTwo erros: {twoError}/{total_word}')
+    print(f'Common statistic: \nTotal hamming words count : {total_word} \nWithout errors: {noError}/{total_word} \nOne error: {oneError}/{total_word} \nTwo erros: {twoError}/{total_word}')
+    with open('./client_result.txt', 'a') as wf:
+        wf.write(f'Common statistic: \nTotal word count : {total_word} \nWithout errors: {noError}/{total_word} \nOne error: {oneError}/{total_word} \nTwo erros: {twoError}/{total_word}')
 
 def process(str, sock, flag):
     #1) Получаем последовательность битов
@@ -54,14 +58,20 @@ def process(str, sock, flag):
         if stat != '':
             stat_from_server.append(int(stat))
     #Провереяем нашу статистику ошибок с нашей
-    for idx, value in enumerate(check_err_list):
-        if value != stat_from_server[idx]:
-            #Произошло неудачное определение
-            print(f'The word number {idx} is not true. True value = {value}. From server = {stat_from_server[idx]}')
+    with open('./client_result.txt', 'w') as wf:
+        for idx, value in enumerate(check_err_list):
+            if value != stat_from_server[idx]:
+                #Произошло неудачное определение
+                print(f'Attention!!! The word number {idx} is not true. True value = {value}. From server = {stat_from_server[idx]}')
+                wf.write(f'Attention!!! The word number {idx} is not true. True value = {value}. From server = {stat_from_server[idx]}')
 
-    print('stat_from_server')
+    with open('./client_result.txt', 'a') as wf:
+        print('stat_from_server')
+        wf.write('\nstat_from_server\n')
     printStat(stat_from_server)
-    print('check_stat')
+    with open('./client_result.txt', 'a') as wf:
+        print('true_stat')
+        wf.write('\ntrue_stat\n')
     printStat(check_err_list)
 
 
@@ -71,9 +81,17 @@ def main():
 
     #Делаем connect
     sock = socket.socket()
+    path_to_file = r'E:\glob_net\hamming_code\release\test.txt' # input("Input full path to file with text.Important! Text should be in cp1251 or : ")  #r'E:\glob_net\hamming_code\release\test.txt' 
+    flag = 0#int(input("Input flag of erros. 0 - no errors, 1 - only one error, 2 - only two error, 3 - mix both of them: "))
+    #flag=0 без ошибок flag=1 только с одиночными ошибками flag=2 только со множественными flag=3 в разброс
+    with open(path_to_file, 'r') as read_file:
+        str = read_file.read()
+
+    print(f'Amount symbols: {len(str)}')
+    w = str.split(' ')
+    print(f'Amount (precisely) of words which divede by Space(between two words): {len(w)}')
     sock.connect(('localhost', 9090))
-    str = 'Думаю, что теперь будет легче. Да и само клиентское приложение проще — нам нужно создать сокет, подключиться к серверу послать ему данные, принять данные и закрыть соединение. Все это делается так:#!/usr/bin/env python # -*- coding: utf-8 -*-ЮАФЫ2??13ads5%^@' 
-    flag = 3 #flag=0 без ошибок flag=1 только с одиночными ошибками flag=2 только со множественными flag=3 в разброс
+
     process(str, sock, flag)
 
     return 0

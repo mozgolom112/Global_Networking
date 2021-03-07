@@ -1,0 +1,73 @@
+Common statistic: 
+Total word count : 2279 
+Without errors: 2279/2279 
+One error: 0/2279 
+Two erros: 0/2279
+RESULT TEXT:
+Думаю, что теперь будет легче. Да и само клиентское приложение проще — нам нужно создать сокет, подключиться к серверу послать ему данные, принять данные и закрыть соединение. Все это делается так:#!/usr/bin/env python # -*- coding: utf-8 -*-ЮАФЫ2??13ads5%^@
+
+The largest organisms on Earth
+
+What is the largest organism living on Earth? How about those that are extinct1 now? These questions are trickier2 than they look. Are they about height, mass, volume or maybe length? Sometimes we can see only a small part of an otherwise huge living creature. Other times you can argue3 that a colony of organisms that behaves4 as one creature also needs to be considered5. Let’s at least try to find out what are the largest creatures in some taxonomic kingdoms6 out there.
+
+We’ll start with the animal kingdom. Of all the living animals the largest one (and also the heaviest one) is the majestic7 blue whale. It’s so large that there are no scales8 available to weigh them as a whole. The heaviest blue whale ever recorded was at 190 tonnes, while the longest was about 33 meters long. It still came shorter than a humble lion’s mane jellyfish that is nearly 37 meters long.
+
+The largest animal to walk on Earth today (or a terrestrial9 animal) is, without a doubt10, the African bush elephant. An adult elephant bull11 weighs almost 11 tons, and stands about 4 meters tall. Both the blue whale and the African elephant are very gentle12 giants. Despite this, sadly, both populations were hurt severely13 by humans. Currently both species14 are considered endangered15.
+
+But what about the extinct species? Everyone knows that some dinosaurs were gigantic! And while the dinosaurs aren’t actually extinct (since modern birds belong to the dinosaur clade16 Theropoda), the largest of them we know about only from fossils17. For example, the famous Tyrannosaurus rex, as scientists speculate, was standing roughly 370 cm tall and was over 12 meters in length! The largest exhibited18 skull of T. rex was just about one and a half meters long. A study on Tyrannosaurus bones was made in 2012. It has revealed that T. rex had the strongest bite of any terrestrial animal, ever! A hungry Tyrannosaurus could bite with the force of more than 50.000 Newtons, which is comparable19 to some modern hydraulic press machines. One of the largest dinosaurs known today though is Giraffatitan. It was a large, plant-eating creature. Its mass could exceed20 70 tons and it was over 20 meters long!
+
+Other large extinct animals include the species called Palaeoloxodon and Paraceratherium. Those were the distant cousins of modern elephants and rhinos. They were the ones of the largest known mammals to walk the Earth, ever.
+
+Текст для изучения и практики английского языка: чтение и перевод с английского на русский. Уровень сложности A2/B1 — Pre-Intermediate. Читайте вслух, старайтесь переводить самостоятельно.
+Самые большие организмы на Земле
+
+Какое живое существо – самое большое на Земле? А как насчёт тех, что уже вымерли? Эти вопросы хитрее, чем может показаться на первый взгляд. Про высоту ли они, про массу, объём или, может быть, про длину? Бывают случаи, когда видно лишь небольшую часть огромного живого существа. В других случаях можно поспорить, что колония организмов, ведущая себя как одно существо, также может участвовать в таком соревновании. Давайте по крайней мере попробуем выделить самых больших существ в некоторых таксономических царствах.
+
+Начнём с царства животных. Из всех существующих животных самое большое (а также самое тяжёлое) – величественный синий кит. Они настолько огромны, что не существует весов, способных взвесить их целиком. Самый массивный синий кит, которого когда-либо видели, был весом около 190 тонн, а самый длинный – около 33 метров в длину. Тем не менее, он оказался короче скромной медузы, волосистой цианеи, длина которой составила почти 37 метров.
+
+Самое большое наземное животное на данный момент – это, без сомнения, саванный слон. Взрослый самец саванного слона весит почти что 11 тонн, а в высоту он около 4 метров. И синий кит, и саванный слон – абсолютно безобидные гиганты. К сожалению, несмотря на это, человек нанёс значительный вред обеим популяциям. На сегодняшний день оба вида относятся к угрожаемым.
+
+А что насчёт вымерших видов? Ведь все знают, что некоторые динозавры были просто огромными! И хотя динозавры на самом деле не вымерли (так как современные птицы относятся к кладе динозавров Theropoda), о самых крупных из них мы знаем только по окаменелостям. Например, знаменитый тираннозавр, как считают учёные, достигал примерно 370 см в высоту и более 12 метров в длину! Самый большой экспонат черепа «ти-рекса» был размером около полутора метров. В 2012 году на костях тираннозавров было проведено исследование. Оно показало, что «ти-рекс» обладал наибольшей силой укуса из всех наземных животных во все времена! Голодный тираннозавр мог укусить с силой более 50000 Ньютонов, что можно сравнить силой некоторых современных гидравлических прессов. Один из самых больших динозавров, известных на сегодняшний день, называется жираффатитаном. Это было большое травоядное существо. Его масса могла превосходить 70 тонн, а длина – более 20 метров!
+
+К другим вымершим животным-гигантам относят виды Palaeoloxodon и Paraceratherium. Это были дальние родственники современных слонов и носорогов. Они были одними из самых больших млекопитающих, что когда-либо ходили по Земле.
+
+Но постойте, ведь животные – не единственные живые существа на планете! Что насчёт растений и других, более простых организмов? Например, осиновая (точнее, тополевая) роща Пандо, находящаяся в США на юге штата Юта, считается одним организмом, объединённым единой корневой системой. Если это действительно так, размер Пандо – 43,6 гектара или 0,43 км2! Роще этой по крайней мере несколько тысяч лет, что делает её также одним из древнейших живых организмов.
+
+А если вам хочется пойти вширь, грибковая колония Armillaria ostoyae занимает почти 9 км2 в лесах американского штата Орегон! Если представить эту колонию целым организмом, ее можно считать наибольшим организмом в мире по занимаемой площади.
+
+Мы продолжаем делать множество открытий и сегодня. И, может быть, завтра мы найдём что-то такое, по сравнению с чем все эти вещи окажутся маленькими.
+
+The Olympic Games
+
+The Olympic Games is a major international sports competition1 event. Inspired by the Olympic Games of Ancient Greece, the modern Olympics participation2 unites more than 200 nations of the world in a strife3 to be the best at various sports. The competition is held every two years and alternates between ‘summer’ and ‘winter’ sports. Only ‘summer’ types of sport were represented at first.
+
+The first modern4 Olympics were held in Athens in 1859. The event was held by a Greek businessman Evangelis Zappas as an effort5 to support Greek culture. It was repeated again in 1870 and in 1875. Foreigners6 who visited these events liked them very much. International sports competition was a thing that very much resonated7 with the code of conduct8 of Victorian gentlemen.
+
+French historian Pierre de Fredy, Baron de Coubertin, made an effort to preserve9 these competitions. With the help of his English and Greek friends, he established10 the International Olympic Committee in 1894. This organisation still successfully oversees11 modern Olympics nowadays.
+
+The first Olympics under the IOC supervision12 were held in 1896 in Athens. More than 200 sportsmen from 14 nations came to compete for a chance to win international recognition13 and a medal. A silver medal was awarded to the winner in a competition, along with an olive branch and a diploma of a winner. Those who came second were awarded a copper medal and a laurel14 branch. Third place was honorary15 and offered no prize. The competitions were held in 9 disciplines: athletics (jumping and running various distances, as well as running a marathon), cycling, fencing16, gymnastics, swimming, tennis, wrestling, weightlifting, and, curiously enough, shooting a rifle. Additional competition in sailing17 was planned, but cancelled shortly before the event.
+
+Attempts to add some winter sports were made in 1908 and 1920. The first real Winter Olympics were held in 1924, in a French town of Chamonix-Mont-Blanc. The contest was held in 5 different sports: curling, bobsleigh, ice skating, ice hockey and nordic skiing.
+
+At first the games didn’t allow any professional sportsmen to compete. The people behind the competitions thought that training actually gives a participant an unfair advantage18 over any other person that wished to compete. After much debate and controversy19, this restriction20 was finally lifted in 1988.
+
+The Olympics today are one of the biggest possible events of the year. Any country might apply to host it, but preparing for the event is very hard. It usually pays out in the long run21, since the competitions gather much revenue22 off the tourists and advertisements23.
+
+As the IOC was joined by more members, the event also became increasingly political, with various countries boycotting the Olympic Games for various reasons throughout24 the years. The competitions have also been in the middle of many major doping scandals that had quite a few25 competitors disqualified.
+Олимпийские игры
+
+Олимпийские игры – крупное международное событие, посвящённое спортивным соревнованиям. Созданное по образу античных Олимпийских игр, участие в соревновании объединяет более 200 наций в борьбе за право быть лучшими в определённых видах спорта. Соревнование проводится каждые два года, при этом виды спорта чередуются между «летними» и «зимними». Изначально были представлены только «летние» виды спорта.
+
+Первые современные Олимпийские игры проводились в Афинах в 1859 году. Событие было организовано силами греческого коммерсанта Евангелиса Заппаса в стремлении поддержать греческую культуру. В 1870 и 1875 годах их повторили вновь. Посещавшим их иностранцам состязания чрезвычайно понравились. Международное спортивное соревнование как явление очень резонировало с кодексом поведения викторианского джентльмена.
+
+Французский историк Пьер де Фреди, барон де Кубертен, попытался сохранить эти соревнования. С помощью своих друзей из Англии и Греции в 1894 году он организовал Международный олимпийский комитет. Эта организация успешно контролирует проведение современных Олимпиад и поныне.
+
+Первая Олимпиада под эгидой МОК была проведена в Афинах в 1896 году. Более 200 спортсменов из 14 государств собрались, чтобы посоревноваться за шанс получить всемирную известность и выиграть медаль. Победившему в какой-либо категории вручалась серебряная медаль и оливковая ветвь, а также грамота победителя. Второе место награждалось медной медалью и лавровой ветвью. Третье место было почётным и не награждалось. Соревнования проводились в девяти дисциплинах: лёгкая атлетика (прыжки и бег на различные дистанции, а также марафонский забег), велоспорт, фехтование, гимнастика, плавание, теннис, борьба, тяжёлая атлетика и, что интересно, стрельба из ружей. Дополнительно планировалось состязание в парусном спорте, но было отменено незадолго до открытия соревнований.
+
+Попытки добавить некоторые зимние виды спорта были были сделаны в 1908 и 1920 годах. Первые настоящие Зимние Олимпийские игры были проведены в 1924 году во французском городе Шамони-Мон-Блан. Состязание включало в себя 5 различных видов спорта: кёрлинг, бобслей, конькобежный спорт, хоккей и так называемые «северные дисциплины» (включающие в себя лыжные гонки, прыжки с трамплинов, лыжное двоеборье и т.п.).
+
+Изначально участие в играх не разрешалось профессиональным спортсменам. Организаторы соревнований считали, что тренировка может давать участнику нечестное преимущество перед другими людьми, которые хотели бы поучаствовать. После множества жарких и противоречивых дебатов это ограничение было, наконец, снято – в 1988 году.
+
+Олимпиада сегодня – одно из самых ярких возможных событий года. Любая страна может подать заявку на организацию Олимпиады, но подготовиться к ней чрезвычайно нелегко. В перспективе обычно она окупается, поскольку соревнования приносят огромный доход за счет туристов и рекламы.
+
+С течением времени в МОК вступает всё больше стран, и сами соревнования, конечно же, всё больше политизируются: за годы существования организации множество стран бойкотировало Олимпиады по самым различным причинам. Участники также оказывались в центре множества глобальных допинговых скандалов, результатом которых стало отстранение большого числа атлетов от соревнований.
